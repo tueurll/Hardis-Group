@@ -1,0 +1,59 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #272741;
+    margin: 10px auto 0;
+}
+
+.sectors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 100px;
+}
+
+.sector {
+    background-color: #ebebeb;
+    border: 1px solid #ddd;
+    border-radius: 80px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.sector:hover {
+    transform: translateY(-5px);
+}
+
+.sector h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sector p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    
+}
+
+#secteur{
+    
+    border: solid 1px #000;
+}
