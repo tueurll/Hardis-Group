@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/section.css">
+
+</head>
+<body>
+    <div id="navbar"></div>
+    <main>
+        <section id="accueil">
+            <h1>Découvre Hardis Group :
+                Experts en Technologie et Logistique</h1>
+
+                <p>Bienvenue sur le site de Hardis Group ! Nous aidons les entreprises à utiliser les nouvelles technologies 
+                    pour améliorer leur fonctionnement, notamment dans les domaines du commerce et de la gestion des stocks.</p>
+        </section> 
+        <section id="secteur">
+            <div class="container">
+                <h2 class="title">NOS SECTEURS</h2>
+                <div class="sectors">
+                    <div class="sector">
+                        <h3>Agro-industrie</h3>
+                        <p>Hardis Group optimise la gestion des stocks et la qualité des produits agricoles et alimentaires.</p>
+                    </div>
+                    <div class="sector">
+                        <h3>Banque et finance</h3>
+                        <p>Réinventer le conseiller bancaire avec des outils digitaux, des agences connectées pour une expérience client simplifiée.</p>
+                    </div>
+                    <div class="sector">
+                        <h3>Logistique et Transport</h3>
+                        <p>Innover avec la Supply Chain 4.0 : objets connectés, blockchain et réalité augmentée pour une logistique plus rapide, transparente et efficace.</p>
+                    </div>
+                    <div class="sector">
+                        <h3>Assurance et mutuelle</h3>
+                        <p>Accompagner votre secteur dans la transformation métier et digitale pour réduire les coûts et lancer de nouveaux services.</p>
+                    </div>
+                    <div class="sector">
+                        <h3>Retail</h3>
+                        <p>Magasins connectés, paiements rapides et promotions personnalisées pour un achat simplifié.</p>
+                    </div>
+                    <div class="sector">
+                        <h3>Industrie et énergie</h3>
+                        <p>Des magasins modernes avec bornes interactives, paiements rapides et promotions pour une expérience d'achat simplifiée et connectée.</p>
+                    </div>
+                </div>
+            </div>        </section>    
+   
+    </main>
+    <script>
+        // Charge le contenu de nav.html et l'insère dans le div#navbar
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data)
+            .catch(error => console.error('Erreur lors du chargement de la navigation:', error));
+    </script>
+
+</body>
+</html>
